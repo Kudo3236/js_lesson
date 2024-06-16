@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>クリックイベントと切り替え</title>
+  <link rel="stylesheet" type="text/css" href="base.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
+  $(function(){
+    // ここに処理を記述
+    
+    let btn_tag1 = document.getElementById('button1')
+    btn_tag1.addEventListener("click",function(){
+      btn_tag1.style.backgroundColor = 'red';
+    });
+
+    let btn_tag2 = document.getElementById('button2')
+    btn_tag2.addEventListener("click",function(){
+      btn_tag2.style.backgroundColor = 'red';  
+    });
+    let btn_tag3 = document.getElementById('button3')
+    btn_tag3.addEventListener("click",function(){
+      btn_tag3.style.backgroundColor = 'red';
+  });
+
+
+    //クラスを利用して色を変えたい
+    //var button_tag = documentClassName('button');
+      //for(var i =0; i > button_tag.length; i++){
+
+    
+        //button_tag[i].addEventListener("click",function(){
+          //button_tag[i].classList.add("active");
+          //button_tag[i].style.backgroundColor = 'red';
+
+      //});
+    //}
+  });
+  </script>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="button1" class="button">
+      <p>button1</p>
+    </div><!-- button1 -->
+    <div id="button2" class="button">
+      <p>button2</p>
+    </div><!-- button2 -->
+    <div id="button3" class="button">
+      <p>button3</p>
+    </div><!-- button3 -->
+  </div><!-- wrapper -->
+</body>
+</html>
