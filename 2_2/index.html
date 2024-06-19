@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>クリックイベントと切り替え</title>
+  <link rel="stylesheet" type="text/css" href="base.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
+  $(function(){
+    //クラスを利用して色を変える
+    let button_tag = document.getElementsByClassName("button");
+      for(let i = 0; i < button_tag.length; i++){
+        button_tag[i].addEventListener("click",function(){
+          for(let x = 0; x < button_tag.length; x++){
+            if(button_tag[i] == button_tag[x]){
+              button_tag[x].style.backgroundColor = 'red';
+            }else{
+              button_tag[x].style.backgroundColor = '#fdd';
+            }
+          }
+        },false);
+      }
+  });
+  </script>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="button1" class="button">
+      <p>button1</p>
+    </div><!-- button1 -->
+    <div id="button2" class="button">
+      <p>button2</p>
+    </div><!-- button2 -->
+    <div id="button3" class="button">
+      <p>button3</p>
+    </div><!-- button3 -->
+  </div><!-- wrapper -->
+</body>
+</html>
