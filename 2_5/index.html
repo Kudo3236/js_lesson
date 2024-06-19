@@ -11,16 +11,14 @@
     let button_tag = document.getElementById('button');
     let value_tag = document.getElementById('value');
       button_tag.addEventListener("click",function(){
-      if(value_tag.value == 1)
-      {
-        box_tag.style.backgroundColor = 'red';
-      }else if(value_tag.value == 2){
-        box_tag.style.backgroundColor = 'green';
-      }else if(value_tag.value == 3){
-        box_tag.style.backgroundColor = 'blue';
-      }
-      
-    });
+        if(value_tag.value == 1){
+          box_tag.style.backgroundColor = 'red';
+        }else if(value_tag.value == 2){
+          box_tag.style.backgroundColor = 'green';
+        }else if(value_tag.value == 3){
+          box_tag.style.backgroundColor = 'blue';
+        }
+      });
   });
   </script>
 </head>
